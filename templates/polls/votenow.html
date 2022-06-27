@@ -23,13 +23,13 @@
         <form action="" method="post">
         {% csrf_token %}
         <h3> {{form.question}} </h3>
-        <button  type="submit" name="Like" style = "background-color:green">Like</button>
+        <button  type="submit" name="Like" style = "background-color:green"><a href="{% url 'home' %}">Like</button>
         </form>
         </span>
-        <span class="p-x3 mb-5" style="float:left;margin-top:60px;margin-left:-10px">
+        <span class="p-x3 mb-5" style="float:left;margin-top:10px;margin-left:-10px">
         <form action="" method="post">
         {% csrf_token %}
-        <button type="submit" name="DisLike" style = "background-color:red"> DisLike</button>
+        <button type="submit" name="DisLike" style = "background-color:red;margin-top:60px"><a href="{% url 'home' %}">DisLike</button>
         </form>
 </span>
     </div>
